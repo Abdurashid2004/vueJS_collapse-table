@@ -40,6 +40,7 @@
                 class="w-full px-2 py-1 border rounded"
                 :placeholder="row.name"
                 @blur="saveEditName(row)"
+                @keyup.enter="saveEditName(row)"
               />
             </td>
             <td
@@ -55,6 +56,7 @@
                 class="w-full px-2 py-1 border rounded"
                 :placeholder="row.age"
                 @blur="saveEditAge(row)"
+                @keyup.enter="saveEditAge(row)"
               />
             </td>
             <td
@@ -69,6 +71,7 @@
                 class="w-full px-2 py-1 border rounded"
                 :placeholder="row.address"
                 @blur="saveEditAddress(row)"
+                @keyup.enter="saveEditAddress(row)"
               />
             </td>
             <td
